@@ -5,6 +5,6 @@
   git checkout master
   git pull
   source /home/ubuntu/djtrumpenv/bin/activate
-  pip install -r requirements.txt
+  pip3 install -r requirements.txt
   ./manage.py migrate
   sudo supervisorctl restart djtrump
