@@ -6,5 +6,3 @@
   pip install -r requirements.txt
   ./manage.py migrate
   sudo supervisorctl restart djtrump
-  exit
-EOF
