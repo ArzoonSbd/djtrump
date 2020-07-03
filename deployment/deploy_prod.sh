@@ -5,7 +5,8 @@
   git checkout master
   git pull
   pwd
-  . /home/ubuntu/djtrumpenv/bin/activate
+  deactivate
+  source /home/ubuntu/djtrumpenv/bin/activate
   sleep 20
   pip3 install -r requirements.txt
   ./manage.py migrate
