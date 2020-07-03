@@ -16,6 +16,7 @@ node {
             sh '. env/bin/activate'
             sh 'env/bin/pip install -r requirements.txt'
             sh 'env/bin/python manage.py test --testrunner=djtrump.tests.test_runners.NoDbTestRunner'
+            sh 'deactivate'
 
         stage 'Deploy'
             sh './deployment/deploy_prod.sh'
